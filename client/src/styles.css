@@ -2,3 +2,26 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transition{
+    transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),
+    color 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.transition:hover{
+    background-color: rgb(73, 70, 70);
+    transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),
+    color 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.border{
+    border: 1px solid red;
+}
