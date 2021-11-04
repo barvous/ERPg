@@ -9,11 +9,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { SidebarComponent } from './views/components/sidebar/sidebar.component';
+import { NavbarComponent } from './views/components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    SidebarComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

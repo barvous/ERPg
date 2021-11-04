@@ -1,0 +1,92 @@
+ul, li {
+    list-style-type: none;
+}
+
+.sidenav-container {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidenav-fixed{
+    border-right: 1px solid rgb(194, 194, 194);
+    width: 70px;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    transition: width 300ms cubic-bezier(.68,.36,.61,.92);
+}
+
+.sidenav-fixed.open {
+    width: 250px;
+}
+
+.header-sidebar{
+    display: block;
+    margin: 25px 0;
+    width: 100%;
+    height: 130px;
+    position: relative; 
+}
+
+.header-sidebar img{
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200px, -50%);
+    transition: transform 400ms cubic-bezier(.68,.36,.61,.92),
+                opacity 200ms ease-out;
+    opacity: 0;
+}
+
+.sidenav-fixed.open .header-sidebar img {
+    transition: transform 400ms cubic-bezier(.68,.36,.61,.92),
+                opacity 200ms ease-in;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.sidenav-btn {
+    display: grid;
+    grid-template-columns: 70px 180px;
+    height: fit-content;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidenav-btn:hover {
+    background-color: rgba(194, 194, 194, 0.3);
+}
+
+.sidenav-icon {
+    padding: 12px 20px;
+    line-height: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.sidenav-icon--open {
+    display: inline-block;
+}
+.mat-icon-button i, .mat-icon-button .mat-icon{
+    line-height: 28px;
+}
+
+.mat-icon {
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    padding-right: 0;
+    cursor: pointer;
+}
+
+.content {
+    flex-grow: 1;
+    height: 100%;
+    overflow-y: auto;
+}

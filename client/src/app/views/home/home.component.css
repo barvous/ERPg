@@ -3,6 +3,10 @@
     justify-content: space-between;
   }
 
+.mat-toolbar span{
+  cursor: pointer;
+}
+
 .toolbar-item{
     cursor: pointer;
     width: fit-content;

@@ -1,0 +1,51 @@
+<div class="sidenav-container">
+    <div [ngClass]="{'sidenav-fixed': true,'open': isOpen}">
+
+            <div class="sidenav-icon sidenav-icon--open">
+                <button mat-icon-button (click)="closeMenu()">
+                    <mat-icon class="reorder">reorder</mat-icon>
+                </button>
+            </div>
+        <div class="header-sidebar">
+            <img src="/assets/dado_d20.png" />
+        </div>
+
+        <div class="sidenav-menu">
+            <ul>
+                <li class="sidenav-btn" (click)="onItemClick()">
+                    <div class="sidenav-icon">
+                        <mat-icon>dashboard</mat-icon>
+                    </div>
+                    <div class="sidenav-label">Dashboard</div>
+                </li>
+                <li class="sidenav-btn" (click)="onItemClick()">
+                    <div class="sidenav-icon">
+                        <mat-icon>shopping_bag</mat-icon>
+                    </div>
+                    <div class="sidenav-label">Pedidos</div>
+                </li>
+                <li class="sidenav-btn" (click)="onItemClick()">
+                    <div class="sidenav-icon">
+                        <mat-icon>account_circle</mat-icon>
+                    </div>
+                    <div class="sidenav-label">Clientes</div>
+                </li>
+                <li class="sidenav-btn" (click)="onItemClick()">
+                    <div class="sidenav-icon">
+                        <mat-icon>settings</mat-icon>
+                    </div>
+                    <div class="sidenav-label">Configurações</div>
+                </li>
+                <li class="sidenav-btn" (click)="onItemClick()">
+                    <div class="sidenav-icon">
+                        <mat-icon>assignments</mat-icon>
+                    </div>
+                    <div class="sidenav-label">Termos de Uso</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <ng-content></ng-content>
+    </div>
+</div>
