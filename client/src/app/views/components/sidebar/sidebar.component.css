@@ -44,6 +44,19 @@ ul, li {
     opacity: 0;
 }
 
+.carousel{
+    height: 200px;
+    max-width: 300px;
+}
+
+.imagens-carousel{
+    width: 100%;
+}
+
+img{
+    
+}
+
 .sidenav-fixed.open .header-sidebar img {
     transition: transform 400ms cubic-bezier(.68,.36,.61,.92),
                 opacity 200ms ease-in;

@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewEncapsulation } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
 
 @Component({
@@ -8,6 +8,15 @@ import { MatDrawer } from '@angular/material/sidenav';
 })
 export class SidebarComponent implements OnInit {
 
+  carousel = [
+    {
+      path: 'assets/d4.jpg/'
+    },
+    {
+      path: 'assets/dado_d20.png/'
+    }
+  ];
+
   showFiller = false;
   style:any;
   isOpen: boolean = true;
@@ -15,6 +24,7 @@ export class SidebarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 

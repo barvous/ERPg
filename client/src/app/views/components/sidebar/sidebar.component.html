@@ -1,13 +1,14 @@
 <div class="sidenav-container">
     <div [ngClass]="{'sidenav-fixed': true,'open': isOpen}">
 
-            <div class="sidenav-icon sidenav-icon--open">
-                <button mat-icon-button (click)="closeMenu()">
-                    <mat-icon class="reorder">reorder</mat-icon>
-                </button>
-            </div>
-        <div class="header-sidebar">
-            <img src="/assets/dado_d20.png" />
+        <div class="sidenav-icon sidenav-icon--open">
+            <button mat-icon-button (click)="closeMenu()">
+                <mat-icon class="reorder">reorder</mat-icon>
+            </button>
+        </div>
+
+        <div class="carousel">
+            <carousel [images]="carousel" class="imagens-carousel"  [loop]=true></carousel>
         </div>
 
         <div class="sidenav-menu">
