@@ -7,9 +7,18 @@
             </button>
         </div>
 
-        <div class="carousel">
-            <carousel [images]="carousel" class="imagens-carousel"  [loop]=true></carousel>
-        </div>
+            <carousel [loop]="true" [cellsToScroll]="1" class="carousel" >
+                <div class="carousel-cell">
+                    <img src="assets/d4.jpg/">
+                </div>
+                <div class="carousel-cell">
+                    <img src="assets/dado_d20.png/">
+                </div>
+            </carousel>
+
+            <!-- <carousel class="carousel" [images]="carousel" [loop]="true">
+
+            </carousel> -->
 
         <div class="sidenav-menu">
             <ul>

@@ -45,17 +45,24 @@ ul, li {
 }
 
 .carousel{
-    height: 200px;
-    max-width: 300px;
+    border: 1px solid blue;
+    height: 100px !important;
+    
+}
+
+.carousel-cell{
+    border: 1px solid red;
+    height: 100px !important;
+}
+
+img{
+    /* height: 100px; */
 }
 
 .imagens-carousel{
     width: 100%;
 }
 
-img{
-    
-}
 
 .sidenav-fixed.open .header-sidebar img {
     transition: transform 400ms cubic-bezier(.68,.36,.61,.92),
