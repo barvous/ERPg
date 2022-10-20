@@ -7,18 +7,17 @@
             </button>
         </div>
 
-            <carousel [loop]="true" [cellsToScroll]="1" class="carousel" >
-                <div class="carousel-cell">
+            <carousel [images]="imgDados" [arrows]="true" [lightDOM]="true" [overflowCellsLimit]="2"  [cellWidth]="250" [loop]="true" [cellsToScroll]="1" class="carousel flex-center" >
+                <!-- <div class="carousel-cell flex-center">
                     <img src="assets/d4.jpg/">
                 </div>
                 <div class="carousel-cell">
                     <img src="assets/dado_d20.png/">
                 </div>
+                <div class="carousel-cell">
+                    <img src="assets/dado_d20.png/">
+                </div> -->
             </carousel>
-
-            <!-- <carousel class="carousel" [images]="carousel" [loop]="true">
-
-            </carousel> -->
 
         <div class="sidenav-menu">
             <ul>

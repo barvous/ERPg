@@ -8,9 +8,9 @@ import { MatDrawer } from '@angular/material/sidenav';
 })
 export class SidebarComponent implements OnInit {
 
-  carousel = [
+  imgDados = [
     {
-      path: 'assets/d4.jpg/'
+      path: 'assets/d4.svg/'
     },
     {
       path: 'assets/dado_d20.png/'
